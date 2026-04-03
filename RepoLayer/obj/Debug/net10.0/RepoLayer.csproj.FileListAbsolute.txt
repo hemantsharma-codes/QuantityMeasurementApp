@@ -1,0 +1,15 @@
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\bin\Debug\net10.0\RepoLayer.deps.json
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\bin\Debug\net10.0\RepoLayer.dll
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\bin\Debug\net10.0\RepoLayer.pdb
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\bin\Debug\net10.0\ModelLayer.dll
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\bin\Debug\net10.0\ModelLayer.pdb
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\RepoLayer.csproj.AssemblyReference.cache
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\RepoLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\RepoLayer.AssemblyInfoInputs.cache
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\RepoLayer.AssemblyInfo.cs
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\RepoLayer.csproj.CoreCompileInputs.cache
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\RepoLayer.csproj.Up2Date
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\RepoLayer.dll
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\refint\RepoLayer.dll
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\RepoLayer.pdb
+C:\Users\golub\Documents\BridgeLabzProject\RepoLayer\obj\Debug\net10.0\ref\RepoLayer.dll

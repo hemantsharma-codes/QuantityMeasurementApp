@@ -1,0 +1,11 @@
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\bin\Debug\net10.0\ModelLayer.deps.json
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\bin\Debug\net10.0\ModelLayer.dll
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\bin\Debug\net10.0\ModelLayer.pdb
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\obj\Debug\net10.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\obj\Debug\net10.0\ModelLayer.AssemblyInfoInputs.cache
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\obj\Debug\net10.0\ModelLayer.AssemblyInfo.cs
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\obj\Debug\net10.0\ModelLayer.csproj.CoreCompileInputs.cache
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\obj\Debug\net10.0\ModelLayer.dll
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\obj\Debug\net10.0\refint\ModelLayer.dll
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\obj\Debug\net10.0\ModelLayer.pdb
+C:\Users\golub\Documents\BridgeLabzProject\ModelLayer\obj\Debug\net10.0\ref\ModelLayer.dll
