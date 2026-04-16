@@ -15,6 +15,7 @@ namespace ModelLayer.Entity
 
     [Required]
     [MaxLength(200)]
+    [EmailAddress]
     public string Email { get; set; } = string.Empty;
 
     [Required]

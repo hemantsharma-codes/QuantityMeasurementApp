@@ -55,7 +55,7 @@ builder.Services.AddSwaggerGen(options =>
 
 // Database 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
@@ -114,8 +114,17 @@ builder.Services.AddSingleton<JwtService>();   // stateless helper — safe as s
 // CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
-        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins(
+             "http://localhost:4200",  // ← Angular default port
+             "http://localhost:5500",
+             "http://127.0.0.1:5500",
+             "https://fontend-url.vercel.app"
+         )
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
 });
 
 var app = builder.Build();
@@ -126,19 +135,18 @@ await RepoLayer.Seeders.DbSeeder.SeedAsync(app.Services);
 // Middleware Pipeline
 app.UseGlobalExceptionHandler();   // FIRST — catches all unhandled exceptions
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Quantity Measurement API v1");
-        c.DisplayRequestDuration();
-    });
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Quantity Measurement API v1");
+    c.DisplayRequestDuration();
+});
 
-app.UseHttpsRedirection();
-app.UseCors("AllowAll");    
+
+// app.UseHttpsRedirection();
+app.UseCors("AllowFrontend");
 app.UseAuthentication();    // ← MUST be before UseAuthorization
 app.UseAuthorization();
 app.MapControllers();
-app.Run();
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Run($"http://0.0.0.0:{port}");
