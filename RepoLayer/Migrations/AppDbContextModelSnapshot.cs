@@ -9,7 +9,7 @@ using RepoLayer.Data;
 #nullable disable
 
 namespace RepoLayer.Migrations
-{
+{   
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
     {
