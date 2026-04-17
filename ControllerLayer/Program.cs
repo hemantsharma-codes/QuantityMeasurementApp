@@ -54,8 +54,14 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // Database 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+if (string.IsNullOrWhiteSpace(connectionString))
+{
+    throw new Exception("Database connection string is missing.");
+}
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
 
 // JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
@@ -120,7 +126,7 @@ builder.Services.AddCors(options =>
              "http://localhost:4200",  // ← Angular default port
              "http://localhost:5500",
              "http://127.0.0.1:5500",
-             "https://fontend-url.vercel.app"
+             "https://quantix-app.netlify.app"
          )
                .AllowAnyHeader()
                .AllowAnyMethod();
